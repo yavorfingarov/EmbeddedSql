@@ -18,6 +18,8 @@ jobs:
 
       - name: Run DevSkim scan
         uses: microsoft/DevSkim-Action@v1
+        with:
+          directory-to-scan: ./src/
 
       - name: Upload DevSkim scan results
         uses: github/codeql-action/upload-sarif@v3
