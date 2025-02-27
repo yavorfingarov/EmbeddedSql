@@ -1,0 +1,24 @@
+﻿--- SingleLine
+
+SELECT * FROM user
+
+--- MultiLine
+
+SELECT *
+FROM user u
+JOIN city c ON c.id = u.city_id
+
+--- WithComment
+
+SELECT *
+-- Check this
+FROM user
+
+---		Whitespace		
+
+		 SELECT *
+FROM user		
+
+--- SingleLine
+
+SELECT * FROM user

@@ -1,0 +1,4 @@
+﻿{
+  Type: InvalidOperationException,
+  Message: 'Castle.Proxies.ObjectProxy' does not inherit 'System.Data.Common.DbConnection'.
+}

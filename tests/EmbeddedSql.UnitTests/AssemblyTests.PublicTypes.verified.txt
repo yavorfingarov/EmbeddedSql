@@ -1,0 +1,16 @@
+﻿{
+  Interface: [
+    EmbeddedSql.IMigrator,
+    EmbeddedSql.ISql
+  ],
+  Sealed: [
+    EmbeddedSql.EmbeddedSqlOptions,
+    EmbeddedSql.MigratorOptions
+  ],
+  Static: [
+    EmbeddedSql.ServiceCollectionExtensions
+  ],
+  Enum: [
+    EmbeddedSql.TransactionBehavior
+  ]
+}

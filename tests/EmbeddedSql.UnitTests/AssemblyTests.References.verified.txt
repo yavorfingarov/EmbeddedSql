@@ -1,0 +1,12 @@
+﻿[
+  Microsoft.Extensions.DependencyInjection.Abstractions,
+  Microsoft.Extensions.Logging.Abstractions,
+  System.Collections,
+  System.Collections.Immutable,
+  System.ComponentModel,
+  System.Data.Common,
+  System.Linq,
+  System.Memory,
+  System.Runtime,
+  System.Text.RegularExpressions
+]

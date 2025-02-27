@@ -1,0 +1,25 @@
+﻿[
+  {
+    ServiceKey: Test,
+    ServiceType: ISql,
+    KeyedImplementationInstance: {},
+    IsKeyedService: true
+  },
+  {
+    ServiceKey: Test,
+    ServiceType: MigratorOptions,
+    KeyedImplementationInstance: {},
+    IsKeyedService: true
+  },
+  {
+    Lifetime: Scoped,
+    ServiceKey: Test,
+    ServiceType: IMigrator,
+    KeyedImplementationFactory: {
+      Type: Func<IServiceProvider, object, IMigrator>,
+      Target: ServiceCollectionExtensions.<>c,
+      Method: EmbeddedSql.IMigrator AddEmbeddedSql(System.IServiceProvider, System.Object)
+    },
+    IsKeyedService: true
+  }
+]

@@ -1,0 +1,141 @@
+﻿{
+  target: {
+    connection: Open,
+    transactionDisposed: true,
+    schema: [
+      Country,
+      IX_User_FirstName,
+      IX_User_LastName,
+      User,
+      _Migration
+    ],
+    migrations: [
+      {
+        Id: 0001_Init,
+        Timestamp: 2024-10-14 16:15
+      },
+      {
+        Id: 0002_AddIndexLastName,
+        Timestamp: 2024-10-14 16:15
+      },
+      {
+        Id: 0003_AddIndexFirstName,
+        Timestamp: 2024-10-14 16:15
+      },
+      {
+        Id: 0004_AddCountry,
+        Timestamp: 2024-10-14 16:15
+      }
+    ]
+  },
+  log: [
+    {
+      Warning: Executing DDL statements in transaction on a MySql database might have unexpected consequences due to implicit commit.,
+      Category: EmbeddedSql.Migrator
+    },
+    {
+      Information: Applying '0001_Init' to 'mariadb'.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Migration: 0001_Init
+        },
+        {
+          Db: mariadb
+        },
+        {
+          {OriginalFormat}: Applying '{Migration}' to '{Db}'.
+        }
+      ]
+    },
+    {
+      Information: Applying '0002_AddIndexLastName' to 'mariadb'.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Migration: 0002_AddIndexLastName
+        },
+        {
+          Db: mariadb
+        },
+        {
+          {OriginalFormat}: Applying '{Migration}' to '{Db}'.
+        }
+      ]
+    },
+    {
+      Information: Applying '0003_AddIndexFirstName' to 'mariadb'.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Migration: 0003_AddIndexFirstName
+        },
+        {
+          Db: mariadb
+        },
+        {
+          {OriginalFormat}: Applying '{Migration}' to '{Db}'.
+        }
+      ]
+    },
+    {
+      Information: Database 'mariadb' is migrated to the latest state.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Db: mariadb
+        },
+        {
+          {OriginalFormat}: Database '{Db}' is migrated to the latest state.
+        }
+      ]
+    },
+    {
+      Warning: Executing DDL statements in transaction on a MySql database might have unexpected consequences due to implicit commit.,
+      Category: EmbeddedSql.Migrator
+    },
+    {
+      Information: Applying '0004_AddCountry' to 'mariadb'.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Migration: 0004_AddCountry
+        },
+        {
+          Db: mariadb
+        },
+        {
+          {OriginalFormat}: Applying '{Migration}' to '{Db}'.
+        }
+      ]
+    },
+    {
+      Information: Database 'mariadb' is migrated to the latest state.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Db: mariadb
+        },
+        {
+          {OriginalFormat}: Database '{Db}' is migrated to the latest state.
+        }
+      ]
+    },
+    {
+      Warning: Executing DDL statements in transaction on a MySql database might have unexpected consequences due to implicit commit.,
+      Category: EmbeddedSql.Migrator
+    },
+    {
+      Information: Database 'mariadb' is migrated to the latest state.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Db: mariadb
+        },
+        {
+          {OriginalFormat}: Database '{Db}' is migrated to the latest state.
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+﻿[
+  {
+    ServiceType: ISql,
+    ImplementationInstance: {},
+    IsKeyedService: false
+  },
+  {
+    ServiceType: MigratorOptions,
+    ImplementationInstance: {},
+    IsKeyedService: false
+  },
+  {
+    Lifetime: Scoped,
+    ServiceType: IMigrator,
+    ImplementationFactory: {
+      Type: Func<IServiceProvider, object>,
+      Target: ServiceDescriptor.<>c__DisplayClass5_0,
+      Method: System.Object .ctor(System.IServiceProvider)
+    },
+    IsKeyedService: false
+  }
+]

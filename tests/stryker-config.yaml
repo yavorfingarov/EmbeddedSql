@@ -1,0 +1,11 @@
+stryker-config:
+  target-framework: net9.0
+  configuration: 'Release'
+  project: 'EmbeddedSql.csproj'
+  test-projects: ['EmbeddedSql.UnitTests/EmbeddedSql.UnitTests.csproj']
+  test-case-filter: 'Category != Expensive'
+  mutation-level: 'Advanced'
+  thresholds:
+    high: 85
+    low: 70
+  reporters: ['dots', 'html', 'markdown']

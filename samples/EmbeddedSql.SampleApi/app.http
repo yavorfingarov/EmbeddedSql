@@ -1,0 +1,43 @@
+@base_url = http://localhost:5050
+
+###
+
+# @name create
+POST {{base_url}}/api/users/
+Content-Type: application/json
+
+{
+    "FirstName": "John",
+    "LastName": "Doe"
+}
+
+###
+
+GET {{base_url}}/api/users/
+Accept: application/json
+
+###
+
+GET {{base_url}}{{create.response.headers.location}}
+Accept: application/json
+
+###
+
+GET {{base_url}}/api/users/search?firstName=John
+Accept: application/json
+
+###
+
+PUT {{base_url}}{{create.response.headers.location}}
+Content-Type: application/json
+
+{
+    "FirstName": "Jane",
+    "LastName": "Doe"
+}
+
+###
+
+DELETE {{base_url}}{{create.response.headers.location}}
+
+###
