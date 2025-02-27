@@ -1,0 +1,4 @@
+﻿{
+  Type: InvalidOperationException,
+  Message: Could not add statement with a duplicate key 'Multiline'.
+}

@@ -1,0 +1,6 @@
+{
+    "OutputDirectoryPath": "..\\..\\docs",
+    "GeneratedPages": "Namespaces,Types",
+    "GeneratedAccessModifiers": "Public",
+    "Markdown.IgnoreLineBreak": true
+}

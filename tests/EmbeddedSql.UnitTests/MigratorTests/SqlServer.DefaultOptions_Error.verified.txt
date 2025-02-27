@@ -1,0 +1,68 @@
+﻿{
+  target: {
+    connection: Open,
+    transactionDisposed: true,
+    schema: [
+      _Migration,
+      IX_User_LastName,
+      PK__Migration,
+      PK_User,
+      User
+    ],
+    migrations: [
+      {
+        Id: 0001_Init
+      },
+      {
+        Id: 0002_AddIndexLastName
+      }
+    ]
+  },
+  log: [
+    {
+      Information: Applying '0001_Init' to 'test'.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Migration: 0001_Init
+        },
+        {
+          Db: test
+        },
+        {
+          {OriginalFormat}: Applying '{Migration}' to '{Db}'.
+        }
+      ]
+    },
+    {
+      Information: Applying '0002_AddIndexLastName' to 'test'.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Migration: 0002_AddIndexLastName
+        },
+        {
+          Db: test
+        },
+        {
+          {OriginalFormat}: Applying '{Migration}' to '{Db}'.
+        }
+      ]
+    },
+    {
+      Information: Applying '0003_AddIndexFirstName' to 'test'.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Migration: 0003_AddIndexFirstName
+        },
+        {
+          Db: test
+        },
+        {
+          {OriginalFormat}: Applying '{Migration}' to '{Db}'.
+        }
+      ]
+    }
+  ]
+}

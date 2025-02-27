@@ -1,0 +1,8 @@
+﻿{
+  Type: ArgumentOutOfRangeException,
+  Message:
+Got an invalid 'EmbeddedSql.TransactionBehavior' value. (Parameter 'value')
+Actual value was 100.,
+  ActualValue: 100,
+  ParamName: value
+}

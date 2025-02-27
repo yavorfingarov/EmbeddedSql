@@ -1,0 +1,53 @@
+﻿{
+  target: {
+    connection: Open,
+    transactionDisposed: true
+  },
+  log: [
+    {
+      Information: Applying '0001_Init' to 'main'.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Migration: 0001_Init
+        },
+        {
+          Db: main
+        },
+        {
+          {OriginalFormat}: Applying '{Migration}' to '{Db}'.
+        }
+      ]
+    },
+    {
+      Information: Applying '0002_AddIndexLastName' to 'main'.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Migration: 0002_AddIndexLastName
+        },
+        {
+          Db: main
+        },
+        {
+          {OriginalFormat}: Applying '{Migration}' to '{Db}'.
+        }
+      ]
+    },
+    {
+      Information: Applying '0003_AddIndexFirstName' to 'main'.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Migration: 0003_AddIndexFirstName
+        },
+        {
+          Db: main
+        },
+        {
+          {OriginalFormat}: Applying '{Migration}' to '{Db}'.
+        }
+      ]
+    }
+  ]
+}

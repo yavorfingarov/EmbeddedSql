@@ -1,0 +1,4 @@
+﻿{
+  Type: InvalidOperationException,
+  Message: No service for type 'System.Data.IDbConnection' has been registered.
+}

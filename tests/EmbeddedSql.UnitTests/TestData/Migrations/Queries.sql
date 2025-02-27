@@ -1,0 +1,4 @@
+﻿--- FromMigrations
+
+SELECT * 
+FROM migrations

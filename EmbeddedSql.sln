@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmbeddedSql", "src\EmbeddedSql\EmbeddedSql.csproj", "{50767832-3C58-42FE-A3CA-5024B0C0375C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmbeddedSql.UnitTests", "tests\EmbeddedSql.UnitTests\EmbeddedSql.UnitTests.csproj", "{62006F65-2F9D-49C0-BDAF-70F87784634A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmbeddedSql.UnitTests.TestData", "tests\EmbeddedSql.UnitTests.TestData\EmbeddedSql.UnitTests.TestData.csproj", "{C0CA6CE1-69E8-44EA-AC01-354AF31E0B91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmbeddedSql.UnitTests.TestData.Duplicate", "tests\EmbeddedSql.UnitTests.TestData.Duplicate\EmbeddedSql.UnitTests.TestData.Duplicate.csproj", "{0D5295C5-3813-4A57-AD67-9ABC0B4011DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmbeddedSql.UnitTests.TestData.Providers", "tests\EmbeddedSql.UnitTests.TestData.Providers\EmbeddedSql.UnitTests.TestData.Providers.csproj", "{D2179D18-96A8-4244-BF39-0E35BDA3D853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmbeddedSql.SampleApi", "samples\EmbeddedSql.SampleApi\EmbeddedSql.SampleApi.csproj", "{DE4AD33D-858F-42D9-B46E-42AC811A78B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50767832-3C58-42FE-A3CA-5024B0C0375C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50767832-3C58-42FE-A3CA-5024B0C0375C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50767832-3C58-42FE-A3CA-5024B0C0375C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50767832-3C58-42FE-A3CA-5024B0C0375C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62006F65-2F9D-49C0-BDAF-70F87784634A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62006F65-2F9D-49C0-BDAF-70F87784634A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62006F65-2F9D-49C0-BDAF-70F87784634A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62006F65-2F9D-49C0-BDAF-70F87784634A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0CA6CE1-69E8-44EA-AC01-354AF31E0B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0CA6CE1-69E8-44EA-AC01-354AF31E0B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0CA6CE1-69E8-44EA-AC01-354AF31E0B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0CA6CE1-69E8-44EA-AC01-354AF31E0B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D5295C5-3813-4A57-AD67-9ABC0B4011DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5295C5-3813-4A57-AD67-9ABC0B4011DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5295C5-3813-4A57-AD67-9ABC0B4011DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5295C5-3813-4A57-AD67-9ABC0B4011DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2179D18-96A8-4244-BF39-0E35BDA3D853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2179D18-96A8-4244-BF39-0E35BDA3D853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2179D18-96A8-4244-BF39-0E35BDA3D853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2179D18-96A8-4244-BF39-0E35BDA3D853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE4AD33D-858F-42D9-B46E-42AC811A78B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE4AD33D-858F-42D9-B46E-42AC811A78B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE4AD33D-858F-42D9-B46E-42AC811A78B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE4AD33D-858F-42D9-B46E-42AC811A78B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B55A6A5-D43A-428D-8122-45EA02BFDA2A}
+	EndGlobalSection
+EndGlobal

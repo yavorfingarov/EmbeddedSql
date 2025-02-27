@@ -1,0 +1,57 @@
+﻿{
+  target: {
+    connection: Open,
+    transactionDisposed: true,
+    schema: [
+      IX_User_LastName,
+      User
+    ]
+  },
+  log: [
+    {
+      Information: Applying '0001_Init' to 'mariadb'.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Migration: 0001_Init
+        },
+        {
+          Db: mariadb
+        },
+        {
+          {OriginalFormat}: Applying '{Migration}' to '{Db}'.
+        }
+      ]
+    },
+    {
+      Information: Applying '0002_AddIndexLastName' to 'mariadb'.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Migration: 0002_AddIndexLastName
+        },
+        {
+          Db: mariadb
+        },
+        {
+          {OriginalFormat}: Applying '{Migration}' to '{Db}'.
+        }
+      ]
+    },
+    {
+      Information: Applying '0003_AddIndexFirstName' to 'mariadb'.,
+      Category: EmbeddedSql.Migrator,
+      State: [
+        {
+          Migration: 0003_AddIndexFirstName
+        },
+        {
+          Db: mariadb
+        },
+        {
+          {OriginalFormat}: Applying '{Migration}' to '{Db}'.
+        }
+      ]
+    }
+  ]
+}
