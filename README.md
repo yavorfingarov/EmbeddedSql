@@ -3,10 +3,10 @@
 [![nuget](https://img.shields.io/nuget/v/EmbeddedSql)](https://www.nuget.org/packages/EmbeddedSql)
 [![downloads](https://img.shields.io/nuget/dt/EmbeddedSql?color=blue)](https://www.nuget.org/stats/packages/EmbeddedSql?groupby=Version)
 [![build](https://img.shields.io/github/actions/workflow/status/yavorfingarov/EmbeddedSql/cd.yml?branch=master)](https://github.com/yavorfingarov/EmbeddedSql/actions/workflows/cd.yml?query=branch%3Amaster)
-[![loc](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yavorfingarov/552110af4a546bfef6adfd60e60163c3/raw/lines-of-code.json)](https://github.com/yavorfingarov/EmbeddedSql/actions/workflows/cd.yml?query=branch%3Amaster)
-[![maintainability](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yavorfingarov/552110af4a546bfef6adfd60e60163c3/raw/maintainability.json)](https://github.com/yavorfingarov/EmbeddedSql/actions/workflows/cd.yml?query=branch%3Amaster)
-[![test coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yavorfingarov/552110af4a546bfef6adfd60e60163c3/raw/test-coverage.json)](https://github.com/yavorfingarov/EmbeddedSql/actions/workflows/cd.yml?query=branch%3Amaster)
-[![mutation score](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yavorfingarov/552110af4a546bfef6adfd60e60163c3/raw/mutation-score.json)](https://github.com/yavorfingarov/EmbeddedSql/actions/workflows/cd.yml?query=branch%3Amaster)
+[![loc](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yavorfingarov/479024692dc528451f53707bff2b443a/raw/lines-of-code.json)](https://github.com/yavorfingarov/EmbeddedSql/actions/workflows/cd.yml?query=branch%3Amaster)
+[![maintainability](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yavorfingarov/479024692dc528451f53707bff2b443a/raw/maintainability.json)](https://github.com/yavorfingarov/EmbeddedSql/actions/workflows/cd.yml?query=branch%3Amaster)
+[![test coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yavorfingarov/479024692dc528451f53707bff2b443a/raw/test-coverage.json)](https://github.com/yavorfingarov/EmbeddedSql/actions/workflows/cd.yml?query=branch%3Amaster)
+[![mutation score](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yavorfingarov/479024692dc528451f53707bff2b443a/raw/mutation-score.json)](https://github.com/yavorfingarov/EmbeddedSql/actions/workflows/cd.yml?query=branch%3Amaster)
 [![openssf scorecard](https://img.shields.io/ossf-scorecard/github.com/yavorfingarov/EmbeddedSql?label=openssf+scorecard)](https://scorecard.dev/viewer/?uri=github.com/yavorfingarov/EmbeddedSql&sort_by=risk-level&sort_direction=desc)
 
 EmbeddedSql is a NuGet package that provides a clean and organized way to manage SQL statements and database migrations using `.sql` files. It works on top of `System.Data` abstractions, making it database provider and ORM agnostic.
