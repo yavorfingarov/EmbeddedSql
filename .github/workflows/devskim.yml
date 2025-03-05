@@ -6,6 +6,10 @@ on:
   schedule:
     - cron: 30 9 * * 1
 
+permissions:
+  contents: read
+  security-events: write
+
 jobs:
   scan:
     name: Scan
@@ -14,7 +18,7 @@ jobs:
       security-events: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 
       - name: Run DevSkim scan
         uses: microsoft/DevSkim-Action@v1
@@ -22,6 +26,6 @@ jobs:
           directory-to-scan: ./src/
 
       - name: Upload DevSkim scan results
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@b56ba49b26e50535fa1e7f7db0f4f7b4bf65d80d
         with:
           sarif_file: devskim-results.sarif
