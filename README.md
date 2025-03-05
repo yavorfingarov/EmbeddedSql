@@ -19,7 +19,7 @@ Having SQL statements as plain strings scattered around your codebase is not onl
 
 * Install the [EmbeddedSql NuGet package](https://www.nuget.org/packages/EmbeddedSql).
 
-* Make sure all `.sql` files are going to be embedded in the assembly:
+* Make sure all `.sql` files are going to be embedded in the assembly by adding the following lines to your `.csproj` file:
 
 ```xml
 <ItemGroup>
@@ -82,7 +82,7 @@ app.MapGet("/api/users/{id}", (string id, IDbConnection db, ISql sql) =>
 
 The `UnsafeFormat` overloads offer a great way to construct SQL statements dynamically.
 
-Consider this statement:
+Consider the following statement:
 
 ```sql
 --- AppUser.Search
