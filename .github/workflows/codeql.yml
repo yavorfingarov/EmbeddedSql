@@ -10,7 +10,6 @@ on:
 
 permissions:
   contents: read
-  security-events: write
 
 env:
   DOTNET_VERSION: 9.0.x
@@ -19,6 +18,8 @@ jobs:
   scan:
     name: Scan
     runs-on: windows-latest
+    permissions:
+      security-events: write
     strategy:
       fail-fast: false
       matrix:
