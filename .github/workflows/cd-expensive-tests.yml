@@ -1,0 +1,45 @@
+name: CD - Expensive tests
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+env:
+  DOTNET_VERSION: 9.0.x
+
+jobs:
+  run:
+    name: Run
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@3951f0dfe7a07e2313ec93c75700083e2005cbab
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Initialize
+        run: ./build/run.sh --exclusive --target Initialize
+
+      - name: Restore NuGet packages
+        run: ./build/run.sh --exclusive --target RestoreNuGetPackages
+
+      - name: Build
+        run: ./build/run.sh --exclusive --target Build
+
+      - name: Run unit tests
+        run: ./build/run.sh --exclusive --target RunUnitTests
+
+      - name: Upload test results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1
+        with:
+          name: TestResults-${{ env.TIMESTAMP }}
+          path: ./tmp/test-results/

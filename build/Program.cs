@@ -27,15 +27,15 @@ namespace Build
         {
         }
 
+        public sealed class RunInexpensiveUnitTests : BaseRunTests
+        {
+            public override string[] CoverageReportClassFilter => new[] { "-*Generated*", "-*RegexGenerator*" };
+            public override string? Filter => "Category!=Expensive";
+        }
+
         [IsDependentOn(typeof(ScanCode))]
         public sealed class RunUnitTests : BaseRunTests
         {
-            public override string[] CoverageReportClassFilter => new[] { "-*Generated*", "-*RegexGenerator*" };
-            
-            // TODO Fix pipeline docker issue:
-            // Docker.DotNet.DockerImageNotFoundException : 
-            // Docker API responded with status code=NotFound, response={"message":"No such image: mcr.microsoft.com/mssql/server:latest"}
-            public override string? Filter => "Category!=Expensive";
         }
 
         [IsDependentOn(typeof(RunUnitTests))]

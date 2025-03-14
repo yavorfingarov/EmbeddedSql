@@ -41,7 +41,7 @@ jobs:
         run: .\build\run.ps1 --exclusive --target ScanCode
 
       - name: Run unit tests
-        run: .\build\run.ps1 --exclusive --target RunUnitTests
+        run: .\build\run.ps1 --exclusive --target RunInexpensiveUnitTests
 
       - name: Run mutation tests
         run: .\build\run.ps1 --exclusive --target RunMutationTests
