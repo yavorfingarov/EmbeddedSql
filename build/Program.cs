@@ -36,6 +36,7 @@ namespace Build
         [IsDependentOn(typeof(ScanCode))]
         public sealed class RunUnitTests : BaseRunTests
         {
+            public override bool CalculateCoverage => false;
         }
 
         [IsDependentOn(typeof(RunUnitTests))]
